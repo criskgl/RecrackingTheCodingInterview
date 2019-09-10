@@ -709,7 +709,7 @@ Finds a list of the prime numbers up to a number given.
 * Then crosses out the numbers that can be divided by the number that has just been picked
 
 
-## 6 Sorting & Searching
+## 7 Sorting & Searching
 
 ### Sorting
 
