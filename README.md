@@ -260,15 +260,22 @@ Taking out x as common factor:
 
 is equal to:
 
-```n*(n-1)/2```
+```
+n*(n-1)/2
+```
 
-which getting rid of constants in O() notation results in:
+ which getting rid of constants in O() notation results in:
 
-```O(n^2)```
+
+```
+O(n^2)
+```
 
 and replenishing the first taken out element x:
 
-**```O(x*n^2)```**
+```
+O(x*n^2)
+```
 
 This time is quite inefficient. This is where StringBuilder comes to be handy:
 
