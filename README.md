@@ -732,20 +732,20 @@ Trying to keep it simple and easily generalizable we can recall binary search.
 #### Iterative BS
 
 ```
-int binarySearch(int [] a, int x){
-  int low = 0;
-  int high = a.length-1;
-  int mid;
-  while(low <= high){//too small
-    mid(low+high) / 2;
-    if(a[mid] < x){
-      low = mid + 1;
-    }else if(a[mid] > x){//too large
-      high = mid - 1;
-    }else{//FOUND!!
-      return mid;
+public int bSearch (int[] a, int target){
+    int left = 0;
+    int right = a.length - 1;
+    while(left <= right){
+        int mid = (left+right)/2;
+        if(target > a[mid]){
+            left = mid + 1;
+        }else if(target < a[mid]){
+            right = mid - 1;
+        }else{
+            return mid;
+        }
     }
-  }
+    return -1;
 }
 ```
 
